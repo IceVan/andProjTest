@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bartek.andprojtest.messages">
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/add"/>
+
+    <ImageView
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:id="@+id/imageButtonSendM"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/send"/>
+
+    <ImageView
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:id="@+id/imageButtonAddM"
+        android:src="@drawable/add"
+        android:layout_below="@+id/listViewM"
+        android:layout_alignRight="@+id/listViewM"
+        android:layout_alignEnd="@+id/listViewM" />
+
+    <ImageView
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:id="@+id/imageButtonRemoveM"
+        android:src="@drawable/removeall"
+        android:layout_below="@+id/listViewM"
+        android:layout_toRightOf="@+id/imageButtonSendM"
+        android:layout_toEndOf="@+id/imageButtonSendM" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewM"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/imageButtonSendM" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextM"
+        android:layout_below="@+id/listViewM"
+        android:layout_toLeftOf="@+id/imageButtonAddM"
+        android:layout_alignBottom="@+id/imageButtonAddM"
+        android:layout_toRightOf="@+id/imageButtonRemoveM"
+        android:layout_toEndOf="@+id/imageButtonRemoveM" />
+
+</RelativeLayout>
